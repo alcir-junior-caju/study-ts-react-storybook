@@ -11,7 +11,7 @@ export default {
   decorators: [(story: any) => <Provider store={store}>{story()}</Provider>]
 };
 
-const store = {
+const store: any = {
   getState: () => {
     return {
       tasks: defaultTasksData
